@@ -1,28 +1,76 @@
-#landing {
-  background-image: linear-gradient(#795548, #4CAF50);
-  color: #FFFFFF;
+:root {
+  --xblue: #6e7da2;
+  --xorange: #db996c;
+  --xcyan: #aedadd;
+  --xwhite: #fcf8f3;
 }
+
+body {
+  text-align: center;
+}
+
+.container-fluid {
+  padding: 7% 15%;
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: var(--xblue);
+  border-bottom: solid 5px var(--xorange);
+}
+
+button span i {
+  color: var(--xorange);
+}
+
+.nav-link {
+  margin-right: 1em;
+  color: var(--xwhite);
+  font-size: 1.8em;
+}
+
+.navbar-brand {
+  margin-left: 1em;
+  color: var(--xorange);
+  font-weight: bold;
+  font-size: 2.3em;
+}
+
+.nav-link:hover {
+  color: var(--xorange);
+  text-decoration: underline;
+}
+
+.navbar-brand:hover {
+  color: var(--xorange);
+}
+
+.navbar-nav {
+  padding: 2%;
+}
+/* LANDING */
+
+#landing {
+  background-color: var(--xcyan);
+  color: var(--xwhite);
+  text-shadow: 2px 2px var(--xblue);
+}
+
+#landing h1 {
+  font-weight: bold;
+}
+
+/* PRESENTATION */
 
 #presentation {
-  background: #C8E6C9;
+  background-color: var(--xwhite);
 }
 
-#humans-section {
-  background-image: linear-gradient(#1976D2, #212121);
-  color: #FFFFFF;
+.activity {
+  padding: 2em; 5em;
+  color: var(--xblue);
 }
 
-#orcs-section {
-  background-image: linear-gradient(#D32F2F, #212121);
-  color: #FFFFFF;
-}
-
-#undeads-section {
-  background-image: linear-gradient(#512DA8, #212121);
-  color: #FFFFFF;
-}
-
-#nightelves-section {
-  background-image: linear-gradient(#0097A7, #212121);
-  color: #FFFFFF;
+.activity h2 {
+  color: var(--xorange);
 }
